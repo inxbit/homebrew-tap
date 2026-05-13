@@ -9,17 +9,17 @@ class Prismtty < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/inxbit/prismtty/releases/download/v#{version}/prismtty-#{version}-darwin-aarch64.tar.gz"
-      sha256 "b4f77a93505674675bc9d815aee208d8c59ffc32362ce8281713cb34314341f0"
+      sha256 "1f5e67f1947b4b72ffddce97819bb7294c8e1146b40710d215a151101a1693b0"
     else
       url "https://github.com/inxbit/prismtty/releases/download/v#{version}/prismtty-#{version}-darwin-x86_64.tar.gz"
-      sha256 "311057685a32b81be8d84b5dc586c5221c129e5f8cfe6152ca80e085aacdacb4"
+      sha256 "d8c8e49970f3b641a7152c8e3ec7a742a1595e62a540b371e997d01da69c8d14"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/inxbit/prismtty/releases/download/v#{version}/prismtty-#{version}-linux-x86_64.tar.gz"
-      sha256 "d8506942810a38721fadffd65d9c0f92c85bdb292e4d9f3670537f8932f8f91f"
+      sha256 "26c037130a34c3cfac9233005d756f02ea224d3f4452184c7caf7c4fc7605851"
     else
       odie "Linux ARM release artifacts are not published for PrismTTY #{version}"
     end
