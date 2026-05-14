@@ -39,3 +39,23 @@ ICMP mode may need extra privileges on Linux. Run the built-in doctor for exact 
 ```sh
 pinghue --check
 ```
+
+## PrismTTY Notes
+
+`prismtty` installs the main command plus the short aliases `ptty` and `ct`:
+
+```sh
+prismtty --version
+ptty --help
+ct --help
+```
+
+The formula also installs shell completions for Bash, Fish, and Zsh, plus the bundled syntax profiles.
+
+Quick smoke test:
+
+```sh
+printf '192.0.2.1 down\n' | prismtty --profile generic
+```
+
+Published artifacts currently cover macOS Apple Silicon, macOS Intel, and Linux x86_64.
