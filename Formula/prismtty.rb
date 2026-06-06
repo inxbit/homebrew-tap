@@ -1,7 +1,7 @@
 class Prismtty < Formula
   desc "Fast terminal highlighter focused on network devices and Unix administration"
   homepage "https://github.com/inxbit/prismtty"
-  version "1.0.10"
+  version "1.0.11"
   license "MIT"
 
   depends_on "pcre2"
@@ -9,17 +9,17 @@ class Prismtty < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/inxbit/prismtty/releases/download/v#{version}/prismtty-#{version}-darwin-aarch64.tar.gz"
-      sha256 "e26e54770eb133bcfa1bfdebf5a3e97669bc5893e9891ec48f3863939762292e"
+      sha256 "a23fc4dd528388e9ff5f71c0796a2a0efc817e5d90d3190fee1fc6b80d40baf1"
     else
       url "https://github.com/inxbit/prismtty/releases/download/v#{version}/prismtty-#{version}-darwin-x86_64.tar.gz"
-      sha256 "7919968d6470ae00d031781d0c5d2633e269708fc99c4c7119e6a29858a0af66"
+      sha256 "b0cc90cb96696c8d2d23dd29c350124930a89375dbad1e3abd934fe7ecf2457b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/inxbit/prismtty/releases/download/v#{version}/prismtty-#{version}-linux-x86_64.tar.gz"
-      sha256 "6974ca3b791abf146c33f6a558a02b8399e4b26fe36dc938bb3b57460ea4ba3d"
+      sha256 "0d57fb1fe8e706a2e33130a4cf9825be31cda01ac0ea5e2ba41dadafd23ce5f8"
     else
       odie "Linux ARM release artifacts are not published for PrismTTY #{version}"
     end
