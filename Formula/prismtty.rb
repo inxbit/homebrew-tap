@@ -7,20 +7,20 @@ class Prismtty < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/inxbit/prismtty/releases/download/v1.3.2/prismtty-1.3.2-darwin-aarch64.tar.gz"
-      sha256 "5e0a0dc06faac00c726686e942716787483951b6222af958a4cb17bfc217a2e7"
+      url "https://github.com/inxbit/prismtty/releases/download/v1.3.3/prismtty-1.3.3-darwin-aarch64.tar.gz"
+      sha256 "81084110847cc1d303425608d73791243af44b50f94d07f4bba8ffcf81e2697b"
     else
-      url "https://github.com/inxbit/prismtty/releases/download/v1.3.2/prismtty-1.3.2-darwin-x86_64.tar.gz"
-      sha256 "6cb4b50850e635effcc37f95c24217b9c06e7f3b3ea6b744c35432c20540579a"
+      url "https://github.com/inxbit/prismtty/releases/download/v1.3.3/prismtty-1.3.3-darwin-x86_64.tar.gz"
+      sha256 "de24c9e8d2786360112adfdb3426db7ec13a6e9cb5c54f4196448a2e20931e84"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/inxbit/prismtty/releases/download/v1.3.2/prismtty-1.3.2-linux-x86_64.tar.gz"
-      sha256 "f3c0eba5e0112d25c98a3e9b427fea0299c09a8cfdfeedb4be571803cb3dbb5e"
+      url "https://github.com/inxbit/prismtty/releases/download/v1.3.3/prismtty-1.3.3-linux-x86_64.tar.gz"
+      sha256 "aa4a539705809308be977d6495fec408249a8625070246aa8d287cedb35d3c54"
     else
-      odie "Linux ARM release artifacts are not published for PrismTTY 1.3.2"
+      odie "Linux ARM release artifacts are not published for PrismTTY 1.3.3"
     end
   end
 
